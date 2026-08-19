@@ -1,0 +1,465 @@
+@font-face {
+    font-family: 'GothamBook';
+    src: url('font/Gotham-Book.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url('font/Gotham-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'PoppinsExtraBold';
+    src: url('font/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GothamBook', sans-serif; 
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+nav ul li a {
+    font-family: 'PoppinsExtraBold', sans-serif; 
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4, .teks-logo {
+    font-family: 'GothamBold', sans-serif; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    border-bottom: 0.5px solid #ffffff; 
+}
+.logo {
+    display: flex;
+    align-items: center; 
+    gap: 40px; 
+}
+
+.logo img {
+    height: 45px; 
+    width: auto;  
+}
+
+
+.teks-logo {
+    font-family: 'GothamBold', sans-serif;
+    font-size: 22px;
+    color: #1a4d9c;
+    letter-spacing: 1px;
+}
+
+nav {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul {
+    display: flex;
+    list-style: none; 
+    gap: 30px; 
+    transform: translateX(200px);
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #333333;
+    font-weight: 600;
+    font-size: 15px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active, 
+nav ul li a:hover {
+    border-bottom: 3px solid #ffcc00; 
+    color: #000000;
+}
+
+.banner-section {
+    width: 100%;
+}
+
+.gambar-banner {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.keunggulan-section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding: 40px 50px;
+    background-color: #ffffff;
+    gap: 20px;
+}
+
+.item-keunggulan {
+    flex: 1; 
+    text-align: center; 
+}
+
+.item-keunggulan img {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.item-keunggulan h3 {
+    font-size: 14px;
+    color: #000000; 
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.item-keunggulan p {
+    font-size: 12px;
+    color: #666666;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #f78f20 ; 
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: 'GothamBook', sans-serif;
+    font-size: 14px;
+}
+
+.profile-section {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 50px; 
+}
+
+.profile-teks {
+    flex: 1; 
+}
+
+.profile-teks h2 {
+    font-size: 32px;
+    color: #0a897b ; 
+    margin-bottom: 20px;
+}
+
+.profile-teks p {
+    font-size: 15px;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify; 
+}
+
+.profile-gambar {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.profile-gambar img {
+    max-width: 100%;
+    border-radius: 15px; 
+}
+.profile-teks ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-teks ul li {
+    list-style-position: outside; 
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.fasilitas-intro {
+    padding: 50px 50px 20px 50px;
+}
+
+.fasilitas-intro h2 {
+    font-size: 32px;
+    color: #0a897b; 
+    margin-bottom: 15px;
+}
+
+.fasilitas-intro p {
+    font-size: 15px;
+    color: #000000;
+    max-width: 600px; 
+    line-height: 1.6;
+}
+
+.fasilitas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    padding: 20px 50px 60px 50px;
+}
+
+.fasilitas-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.fasilitas-card img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.fasilitas-card h4 {
+    color: #0a897b;
+    font-size: 16px;
+    margin: 15px 0 8px 0;
+}
+
+.fasilitas-card p {
+    color: #666666;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.foto-fasilitas {
+    cursor: pointer;
+    transition: 0.3s;
+}
+.foto-fasilitas:hover {
+    opacity: 0.8; 
+}
+
+
+.modal-latar {
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(8px); 
+    align-items: center; 
+    justify-content: center;
+}
+
+.isi-foto-besar {
+    max-width: 80%; 
+    max-height: 80vh; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5); 
+    animation: zoomMasuk 0.3s ease; 
+}
+
+.tombol-tutup {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+@keyframes zoomMasuk {
+    from {transform: scale(0.5); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+.kontak-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 50px;
+}
+
+.kontak-info {
+    flex: 1;
+}
+
+.kontak-info h2 {
+    font-size: 32px;
+    color: #0a897b; 
+    margin-bottom: 15px;
+}
+
+.kontak-info p {
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.info-list p {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.kontak-action {
+    flex: 1;
+    background-color: #edf9ef; 
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center; 
+}
+
+.kontak-action h3 {
+    color: #0a897b;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.kontak-action p {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.btn-gform {
+    display: inline-block;
+    background-color: #0a897b;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.btn-gform:hover {
+    background-color: #0a897b;
+}
+
+.barcode-container p {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.barcode-container img {
+    max-width: 180px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #1a4d9c; 
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .fasilitas-grid {
+        grid-template-columns: 1fr; 
+        padding: 20px; 
+    }
+
+    nav ul {
+        flex-direction: row; 
+       justify-content: center; 
+        flex-wrap: wrap;
+       gap: 7px; 
+        transform: translateX(0);
+        padding: 0;
+        margin-top: 10px;
+    }
+        nav ul li a {
+        font-size: 12px; 
+    }
+        p {
+        text-align: left !important; 
+    }
+   
+    .fasilitas-intro h2 {
+        font-size: 24px;
+    }
+    .fasilitas-intro p {
+        font-size: 14px;
+    }
+    
+    .tombol-kurikulum {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+.tombol-kurikulum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    
+    font-family: 'GothamBook', sans-serif;
+    font-size: 16px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #0a897b;
+    
+    cursor: pointer;
+    border: none;
+    border-radius: 8px; 
+    
+    padding: 12px 24px; 
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto; 
+    
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tombol-kurikulum:hover {
+    background-color: #f78f20;
+    transform: translateY(-2px);
+}
+.kurikulum-content {
+    display: none; 
+    margin-top: 20px; 
+}
