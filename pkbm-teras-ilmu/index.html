@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PKBM Teras Ilmu - Beranda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <header>
+        <div class="logo">
+            <img src="gambar/logo.png" alt="Logo PKBM Teras Ilmu">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="profile.html">Profil Lembaga</a></li>
+                <li><a href="fasilitas.html">Fasilitas</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    
+    <main>
+        
+      
+        <section class="banner-section">
+            <img src="gambar/banner.jpg" alt="Banner Belajar Nyaman" class="gambar-banner">
+        </section>
+
+
+        <section class="keunggulan-section">
+            
+            <div class="item-keunggulan">
+                <img src="gambar/nyaman.png" alt="Nyaman">
+                <h3>NYAMAN</h3>
+                <p>Lingkungan belajar yang aman, nyaman, dan mendukung perkembangan setiap anak.</p>
+            </div>
+
+            <div class="item-keunggulan">
+                <img src="gambar/fleksibel.png" alt="Fleksibel">
+                <h3>FLEKSIBEL</h3>
+                <p>Waktu belajar menyesuaikan kebutuhan keluarga.</p>
+            </div>
+
+            <div class="item-keunggulan">
+                <img src="gambar/personal.png" alt="Personal">
+                <h3>PERSONAL</h3>
+                <p>Pendampingan lebih dekat sesuai potensi setiap anak.</p>
+            </div>
+
+            <div class="item-keunggulan">
+                <img src="gambar/berbasis komunitas.png" alt="Berbasis Komunitas">
+                <h3>BERBASIS KOMUNITAS</h3>
+                <p>Belajar bersama dalam lingkungan yang mendukung.</p>
+            </div>
+
+            <div class="item-keunggulan">
+                <img src="gambar/islami.png" alt="Nilai Islami">
+                <h3>NILAI ISLAMI</h3>
+                <p>Pembelajaran berlandaskan Al-Qur'an & sunnah.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="kurikulum-section">
+
+    <h1 class="tombol-kurikulum" onclick="toggleKurikulum('isi-1', 'ikon-1')">
+        KURIKULUM-PAKET-A-SEMUA-PELAJARAN <span id="ikon-1">&#9660;</span>
+    </h1>
+    <div id="isi-1" class="kurikulum-content">
+        <iframe src="dokumen/KURIKULUM-PAKET-A-SEMUA-PELAJARAN.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
+    </div>
+
+    <h1 class="tombol-kurikulum" onclick="toggleKurikulum('isi-2', 'ikon-2')">
+       KURIKULUM-PAKET-B-SEMUA-PELAJARAN <span id="ikon-2">&#9660;</span>
+    </h1>
+    <div id="isi-2" class="kurikulum-content">
+        <iframe src="dokumen/KURIKULUM-PAKET-B-SEMUA-PELAJARAN.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
+    </div>
+
+    <h1 class="tombol-kurikulum" onclick="toggleKurikulum('isi-3', 'ikon-3')">
+        KURIKULUM-PAKET-C-SEMUA-PELAJARAN <span id="ikon-3">&#9660;</span>
+    </h1>
+    <div id="isi-3" class="kurikulum-content">
+        <iframe src="dokumen/KURIKULUM-PAKET-C-SEMUA-PELAJARAN.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
+    </div>
+
+</div>
+    <footer>
+        <p>Hak Cipta © PKBM Homeschooling Teras Ilmu. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <script>
+    function toggleKurikulum(idIsi, idIkon) {
+        var konten = document.getElementById(idIsi);
+        var panah = document.getElementById(idIkon);
+
+        if (konten.style.display === "block") {
+            konten.style.display = "none";
+            panah.innerHTML = "&#9660;";
+        } else {
+            konten.style.display = "block";
+            panah.innerHTML = "&#9650;";
+        }
+    }
+</script>
+</body>
+</html>
